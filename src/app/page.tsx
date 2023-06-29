@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 function getTodos() {
-  return prisma.todo.findMany();
+    return prisma.todo.findMany();
 }
 
 async function toggleTodo(id: string, complete: boolean) {
